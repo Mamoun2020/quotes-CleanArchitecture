@@ -1,16 +1,23 @@
 # quotes
 
-A new Flutter project.
+Clean Architecture project about get Random Quote from this api:
+http://quotes.stormconsultancy.co.uk/random.json
 
-## Getting Started
+This project consists of one feature and I split it to layers
 
-This project is a starting point for a Flutter application.
+Random Quote Feature:
 
-A few resources to get you started if this is your first Flutter project:
+- Domain Layer:
+https://github.com/Mamoun2020/quotes-CleanArchitecture/tree/master/lib/src/features/random_quote/domain
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+- Data Layer:
+https://github.com/Mamoun2020/quotes-CleanArchitecture/tree/master/lib/src/features/random_quote/data
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+- presentation:
+https://github.com/Mamoun2020/quotes-CleanArchitecture/tree/master/lib/src/features/random_quote/presentation
+
+and I implement Service Locator:
+https://github.com/Mamoun2020/quotes-CleanArchitecture/blob/master/lib/injection_container.dart
+
+This project is a starting point for Clean Architecure in Flutter application.
+
