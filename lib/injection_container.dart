@@ -15,7 +15,7 @@ final sl = GetIt.instance;
 Future<void> init() async {
   //! Features
   //Blocs  when use it every once we will call a cubit, so we make register when use it
-  sl.registerFactory(() => RandomQuoteCubit(getRandomQuoteUseCase: sl()));
+  sl.registerFactory<RandomQuoteCubit>(() => RandomQuoteCubit(getRandomQuoteUseCase: sl()));
 
   //Use Cases
   // when call init ,we will crate instance form it, not care about use it or not

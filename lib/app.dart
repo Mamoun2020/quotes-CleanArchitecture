@@ -18,7 +18,7 @@ class QuotesApp extends StatelessWidget {
       theme: appTheme(),
       // routes: routes,
       onGenerateRoute: AppRoutes.onGenerateRoute,
-      home: const QuoteScreen(),
+      // home: const QuoteScreen(),
     );
   }
 }

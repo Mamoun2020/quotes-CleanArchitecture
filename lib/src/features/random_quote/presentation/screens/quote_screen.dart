@@ -23,6 +23,7 @@ class _QuoteScreenState extends State<QuoteScreen> {
   @override
   void initState() {
     super.initState();
+    _getRandomQuote();
   }
 
   @override
@@ -56,8 +57,9 @@ class _QuoteScreenState extends State<QuoteScreen> {
                         height: 20,
                       ),
                       InkWell(
-                        onTap: () => _getRandomQuote,
+                        onTap: () => _getRandomQuote(),
                         child: CircleAvatar(
+                          backgroundColor: AppColors.primary,
                           radius: 32,
                           child: Image.asset(ImageAssets.reload,
                               fit: BoxFit.cover,
